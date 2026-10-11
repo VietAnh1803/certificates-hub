@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nguyen Viet Anh's certificate collection: original course documents from IBM, Coursera, DataCamp, Sololearn and Canva, with issuer verification links.">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>Certificates — Nguyen Viet Anh</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#collection">Skip to certificates</a>
+  <div class="page">
+    <header class="nav">
+      <a href="#" class="wordmark">NGUYEN VIET ANH<span>Certificate collection</span></a>
+      <nav aria-label="Profile links">
+        <a href="https://vietanh1803.github.io/VietAnhPortfolio" target="_blank" rel="noopener">Portfolio ↗</a>
+        <a href="https://github.com/VietAnh1803" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">LEARNING, DOCUMENTED</p>
+          <h1 id="page-title">Certificates &amp;<br><em>course credentials.</em></h1>
+          <p class="lead">A collection of completed courses in data engineering, databases, Python, and supporting tools. Browse the original documents and follow issuer verification links where available.</p>
+        </div>
+        <div class="collection-note">
+          <div><strong>11</strong><span>Course certificates</span></div>
+          <p>IBM / Coursera · DataCamp<br>Sololearn · Canva</p>
+          <p class="note-date">Issued 2025–2026</p>
+        </div>
+      </section>
+      <section id="collection" aria-labelledby="collection-title">
+        <div class="section-heading"><h2 id="collection-title">The collection</h2><span id="result-count" aria-live="polite">11 certificates</span></div>
+        <div class="controls">
+          <label class="search"><span>Search certificates</span><input id="search" type="search" placeholder="Search title, issuer, or credential ID…" autocomplete="off"></label>
+          <label class="sort"><span>Order</span><select id="sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label>
+        </div>
+        <div class="filters" role="group" aria-label="Filter by issuer">
+          <button type="button" data-issuer="all" aria-pressed="true">All <span>11</span></button>
+          <button type="button" data-issuer="IBM / Coursera" aria-pressed="false">IBM / Coursera <span>7</span></button>
+          <button type="button" data-issuer="DataCamp" aria-pressed="false">DataCamp <span>2</span></button>
+          <button type="button" data-issuer="Sololearn" aria-pressed="false">Sololearn <span>1</span></button>
+          <button type="button" data-issuer="Canva" aria-pressed="false">Canva <span>1</span></button>
+        </div>
+        <div id="cards" class="cards"></div>
+        <div id="empty" class="empty" hidden>No certificates match this search. <button id="reset" type="button">Clear filters</button></div>
+        <noscript><p>Enable JavaScript to browse the collection, or <a href="certificates/ibm-dba.pdf">open the latest certificate PDF</a>.</p></noscript>
+      </section>
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title">About these credentials</h2>
+        <p>Each entry is a course-completion certificate. The IBM entries are individual courses from the Data Engineering curriculum. Original PDFs are provided alongside readable previews; Coursera entries link to the issuer's verification page.</p>
+      </section>
+    </main>
+    <footer><span>Nguyen Viet Anh</span><span>Original documents · 2025–2026</span><a href="#page-title">Back to top ↑</a></footer>
+  </div>
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-head"><div><p id="viewer-issuer" class="eyebrow"></p><h2 id="viewer-title"></h2></div><button id="close" type="button" aria-label="Close certificate">✕</button></div>
+    <div class="viewer-body"><img id="viewer-image" alt=""><div class="viewer-details"><p id="viewer-meta"></p><div class="viewer-actions"><a id="viewer-pdf" target="_blank" rel="noopener">Open original PDF ↗</a><a id="viewer-download" download>Download PDF ↓</a><a id="viewer-verify" target="_blank" rel="noopener">Verify with issuer ↗</a><a id="viewer-badge" target="_blank" rel="noopener">View badge ↗</a></div></div></div>
+  </dialog>
+</body>
+</html>

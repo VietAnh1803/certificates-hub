@@ -1,0 +1,5 @@
+.sites-local/
+.sites-artifacts/
+.sites-checkout/
+__pycache__/
+*.log
